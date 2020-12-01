@@ -1,0 +1,25 @@
+.title_area {
+    background-color : black;
+    color : white;
+}
+.write_contents_line {
+    border:1px solid;
+    height:400px;
+    overflow:auto;
+}
+
+.write_contents_box {
+    display:block;
+}
+
+.contents_box {
+    border:5px solid;
+}
+
+.login_area {
+    background-color : green;
+}
+
+.title_line {
+    background-color : yellow;
+}
