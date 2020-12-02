@@ -14,7 +14,7 @@
     else {
         echo "<script>
             alert('관리자 모드 진입 실패');
-            location.href='./admin_login.html';
+            location.href='../index.php';
             </script>";
     }
 ?>
