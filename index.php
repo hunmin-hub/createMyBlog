@@ -47,12 +47,15 @@
                기능 : 게시글 제목을 클릭하면 내용부분 div를 보여주고 다시 클릭하면 숨김 -->
 <script>
     function title_click() {
-        var find_id= "board_contents"+event.srcElement.id;
+        var title_id=event.srcElement.id;
+        var find_id="board_contents"+title_id;
         if(document.getElementById(find_id).style.display=='none') {
             document.getElementById(find_id).style.display='block';
+            document.getElementById(title_id).style.background='gray';
         }
         else if(document.getElementById(find_id).style.display=='block') {
             document.getElementById(find_id).style.display='none';
+            document.getElementById(title_id).style.background='rgb(126, 245, 146)';
         }
     }
 </script>

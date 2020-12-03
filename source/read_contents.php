@@ -19,4 +19,5 @@
 
 <script>
     document.getElementById("board_contents1").style.display='block';
+    document.getElementById("1").style.background='gray';
 </script>
