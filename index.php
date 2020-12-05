@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/static/main.css?after">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css?after">
     <title>취업하고 싶다's Blog</title>
 </head>
 <body>
@@ -30,7 +30,12 @@
     <div class="body_area">
     <!-- 글 작성 마다 div 추가 -->
         <?php
-            include('./source/read_contents.php');
+            if(isset($_SESSION['admin_check'])) {
+                include('./source/read_contents_admin.php');
+            }
+            else {
+                include('./source/read_contents_user.php');
+            }
         ?>
     <!-- 여기까지 -->
     <!-- 글 작성 탭 (write_tab.html) div -->

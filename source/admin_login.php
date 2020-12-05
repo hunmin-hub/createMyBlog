@@ -17,4 +17,5 @@
             location.href='../index.php';
             </script>";
     }
+    mysqli_close($con);
 ?>
